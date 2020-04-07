@@ -1,0 +1,17 @@
+\contentsline {chapter}{\numberline {1}The Basics}{2}
+\contentsline {section}{\numberline {1.1}What are Sequences and Series?}{2}
+\contentsline {section}{\numberline {1.2}Series Behavior}{3}
+\contentsline {chapter}{\numberline {2}Types of Series}{4}
+\contentsline {section}{\numberline {2.1}P-Series}{4}
+\contentsline {section}{\numberline {2.2}Telescoping Series}{5}
+\contentsline {section}{\numberline {2.3}Geometric Series}{6}
+\contentsline {chapter}{\numberline {3}Series Tests}{7}
+\contentsline {section}{\numberline {3.1}Test for Divergence (TFD)}{7}
+\contentsline {section}{\numberline {3.2}The Integral Test}{9}
+\contentsline {section}{\numberline {3.3}Geometric Series Test (GST)}{10}
+\contentsline {section}{\numberline {3.4}The Alternating Series Test}{11}
+\contentsline {section}{\numberline {3.5}Limit Comparison Test (LCT)}{13}
+\contentsline {section}{\numberline {3.6}Direct Comparison Test (DCT)}{15}
+\contentsline {section}{\numberline {3.7}The Ratio Test}{17}
+\contentsline {section}{\numberline {3.8}The Root Test}{18}
+\contentsline {section}{\numberline {3.9}Strategies}{19}

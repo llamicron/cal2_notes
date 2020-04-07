@@ -1,0 +1,547 @@
+\documentclass[12pt]{report}
+\usepackage{mathtools}
+\usepackage{soul}
+\usepackage{titlesec}
+\author{Luke Sweeney \\ \large Version 2}
+\title{\textbf{Shit I Need to Know} \\ For Calculus 2 \\ UT Arlington}
+\date{Spring 2020}
+
+
+
+% \titleformat{\chapter}[display]
+%   {\normalfont\bfseries}{}{0pt}{\Large}
+
+\makeindex
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\chapter{The Basics}
+Here's some basic definitions and random things you should know. I might also put a short reference page in here so you don't have to go looking for stuff. I'll do that later though. 
+
+\section{What are Sequences and Series?}
+
+\begin{itemize}
+	\item[] A \textbf{sequence} is a set of numbers, usually denoted by $a_n$ or $a_k$. $n$ or $k$ is the set of all positive integers.
+		$$ a_n = n \quad \quad \quad a_n = \left\{ 1, 2, 3, 4, 5, ... \right\} $$
+		$$ b_n = \frac{1}{n} \quad \quad \quad b_n = \left\{ 1, \frac{1}{2}, \frac{1}{3}, \frac{1}{4}, ... \right\} $$
+		
+		
+	
+	\item[] A \textbf{partial sum} is the sum of a finite number of the terms of a sequence, denoted by $S_n$
+		$$ a_n = n \quad \quad \quad S_n = \left\{1 + 2 + 3 + 4 + ... + n\right\} $$
+		$$ \quad \quad \; S_3 = \left\{ 1 + 2 + 3 \right\} = 6 $$
+		
+		
+	\item[] A \textbf{series} is the partial sum of a sequence as $n\to\infty$; that is, all the (infinitely many) terms of a sequence added together. It is denoted by the Greek letter sigma ($\Sigma$).
+		$$ a_n = n $$
+		$$ \sum_{n=1}^{\infty} a_n = \sum_{n=1}^{\infty} n = \left\{ 1 + 2 + 3 + 4 + ... \right\}$$
+\end{itemize}
+
+\section{Series Behavior}
+When calculating the value of a series (the sum of all the terms of a sequence), the series can behave in a few different ways. If the value of the series continues to increase without bound for each term that we add on, the series \textbf{diverges}.
+
+If the terms of the series grow smaller and smaller and eventually approach 0, the series can level off at an upper bound. In this case, the series \textbf{converges}.
+
+As an example, take the series $ \sum_{n=1}^{\infty} n $. This series is simply the sum of all the positive integers ($1 + 2 + 3...$ to $\infty$). It is easy to imagine that as we add each integer, it grows without bound. Eventually we are adding huge numbers to even bigger numbers. This series diverges.
+
+On the other hand, look at the series $ \sum_{n=1}^{\infty} \left( \frac{1}{n^2} \right) $. Writing out a few of the terms of the series, we get $ 1 + \frac{1}{4} + \frac{1}{9} + \frac{1}{16} ...$ to $ \infty $. While we are adding an infinite number of terms, each one grows smaller and smaller fast enough that the series converges. No matter how many terms we add, it will never grow above a certain value. In this case, this is called a $p$-series, and this particular $p$-series converges to 2; that is, no matter how many terms we add together, the sum will never be greater than 2.
+
+The behavior of some series can be hard to guess. For example, a similar series to the one above is $ \sum_{n=1}^{\infty} \frac{1}{n} $. This particular series is called the "harmonic series". Writing out the first few terms, we get $ 1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} ... $ on to infinity. It is true that each term gets smaller, and eventually the terms are going to be very very small. But, in this case, the series still diverges. The amount of terms being added just barely overpowers how small the terms are getting. This series grows \textit{very} slowly, but still diverges. To give you an idea of how slow this series grows, the first 100 terms give a sum of $ \approx 5 $, while adding the first 1,000,000,000 terms gives a sum of $ \approx 21 $. But it is still divergent.
+
+
+
+
+
+
+
+
+\chapter{Types of Series}
+
+
+
+\section{P-Series}
+A $p$-series is given by
+	$$\sum_{n=1}^{\infty} \left( \frac{1}{n} \right)^p$$
+where $p > 0$ by definition. \\
+
+
+\noindent There is no $p$-series test, but it is a fact of $p$-series that
+\begin{enumerate}
+	\item If $p > 1$, then the series converges.
+	\item If $p \leq 1$, then the series diverges.
+\end{enumerate}
+
+\subsection*{Examples}
+\begin{enumerate}
+	\item Determine if $\sum_{n=1}^{\infty} \frac{1}{n}$ converges or diverges. \\
+	
+	\textbf{Solution:} This is a common $p$-series called the "harmonic series" with $p = 1$. Because $p = 1$, by part 2 of the $p$-series test this series diverges.
+	
+	\item Determine if $\sum_{n=1}^{\infty} \left( \frac{3}{n} \right)^2$ converges or diverges. \\
+	
+	\textbf{Solution:} The $3^2$ can be factored out, and the series can be rewritten as $9 \cdot \sum_{n=1}^{\infty} \left( \frac{1}{n} \right)^2$ where $p = 2$. Because $p > 1$, this series converges by part 1 of the $p$-series test.
+	
+	\item Determine if $\sum_{n=1}^{\infty} \frac{1}{\sqrt[5]{n}}$ is convergent or divergent. \\
+	
+	\textbf{Solution:} This is a $p$-series with $p = \frac{1}{5}$, so by part 2 of the $p$-series test it diverges.
+\end{enumerate}
+
+
+
+\section{Telescoping Series}
+There is no set definition of a telescoping series, but this is a type of series where nearly every term is cancelled by another. The sum of the series if the limit of the $nth$ partial sum. 
+
+In almost every case, the easiest way to find the $nth$ partial sum (and by extension, the sum of the series) is to write out a few terms. Let's take the following series and write out the first few terms, then the $n-1$ and $nth$ term. 
+
+    $$ \sum_{n=1}^{\infty} \left( \frac{1}{n} - \frac{1}{n+1} \right) $$
+
+    $$
+        S_n = \left( \frac{1}{1} - \frac{1}{2} \right) + \left( \frac{1}{2} - \frac{1}{3} \right) +  \left( \frac{1}{3} - \frac{1}{4} \right) +  \left( \frac{1}{4} - \frac{1}{5} \right) + ...
+    $$
+    $$
+        +  \left( \frac{1}{n-1} - \frac{1}{n} \right) +  \left( \frac{1}{n} - \frac{1}{n+1} \right)
+    $$
+
+Looking at the terms in this partial sum, many of the terms cancel out. Cancelling terms and looking at what's left gives us the $nth$ partial sum. We can then take the limit to find the value that the series sums to:
+
+    $$ S_n = 1 - \frac{1}{n+1} $$
+    $$ \lim_{n\to\infty} S_n = \lim_{n\to\infty} 1 - \frac{1}{n+1} = 1 $$
+
+\noindent\rule{2cm}{0.4pt}
+
+
+Some series may not look like telescoping series. You may need to perform a partial fraction decomposition on a problem which will reveal a telescoping series. Observe...
+
+    $$
+        \text{example\;coming\;soon...}
+    $$
+
+
+\section{Geometric Series}
+Geometric series are series of the form 
+
+    $$ \sum_{n=0}^{\infty} kr^n $$
+
+where $k$ is a constant. For geometric series, the ratio $r$ between any two consecutive terms is a constant; that is, $ \frac{a_{n+1}}{a_n} $ is the same for any value of $n$.
+
+The ratio $r$ can tell you what the series converges to, or if it diverges. See Section \ref{geometric_series_test}: Geometric Series Test on page \pageref{geometric_series_test} for the method to solve geometric series and examples.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\chapter{Series Tests}
+These are tests to determine the end behavior of a series. Provided here is a list of tests, each with a description and some examples. Tests are not listed in any particular order other than what I randomly thought of first. Enjoy.
+
+
+
+
+% Test for Divergence
+\section{Test for Divergence (TFD)}
+Given a series
+    $$\sum_{n=1}^\infty a_n$$
+
+\begin{enumerate}
+	\item If $ \lim_{n\to\infty} a_n \neq 0 $, the series \textbf{diverges}.
+	\item If $ \lim_{n\to\infty} a_n $ does not exist, the series \textbf{diverges}.
+	\item If $ \lim_{n\to\infty} a_n = 0 $, the test is \textbf{inconclusive}.
+\end{enumerate}
+
+\noindent The TFD \textbf{cannot} tell you if a series converges, only if it diverges. This is a good test to start with as it might give you an early answer.
+
+\subsection*{Examples}
+\begin{enumerate}
+
+    \item Determine if $ \sum_{n=0}^{\infty} n $ diverges or converges. \\
+    
+    \textbf{Solution:} This very basic series satisfies the condition for the Test for Divergence:
+        $$\lim_{n\to\infty} n \quad \text{\;does\;not\;exist}$$
+    and therefore this series must diverge.
+
+
+
+
+    \item Determine if $ \sum_{n=0}^{\infty} \frac{1}{n} $ diverges or converges. \\ 
+    
+    \textbf{Solution:} This series does not satisfy the condition for the TFD:
+        $$\lim_{n\to\infty} \frac{1}{n} = 0$$
+    so the behavior of this series cannot be determined by the TFD.
+    
+    
+    
+    \item Determine if $ \sum_{n=0}^{\infty} \frac{2n^2 + 3n - 7}{3n^2 - n + 4} $ diverges or converges. \\
+    
+    \textbf{Solution:} This series satisfies part 1 of the TFD:
+    	$$ \lim_{n\to\infty} \frac{2n^2 + 3n - 7}{3n^2 - n + 4} = \frac{2}{3} \neq 0 $$
+    so this series diverges. 
+\end{enumerate}
+
+
+
+
+\clearpage
+
+
+
+
+
+\section{The Integral Test}
+Given a sequence $ a_n $ and a matching function $ f(x) $ such that $ f(n) = a_n $, if $ f(x) $ is \underline{decreasing}, \underline{positive}, and \underline{continuous} on the interval $ [k,\infty) $ then
+
+\begin{enumerate}
+	\item If $ \int_k^\infty f(x)\;dx $ is convergent, then so is $ \sum_{n=k}^{\infty} a_n $
+	\item If $ \int_k^\infty f(x)\;dx $ is divergent, then so is $ \sum_{n=k}^{\infty} a_n $
+\end{enumerate}
+
+
+\subsection*{Examples}
+\begin{enumerate}
+
+	\item Determine if $ \sum_{n=1}^{\infty} \frac{1}{n} $ converges or diverges. \\
+	
+	\textit{Hint}: We already know this as the harmonic series, which diverges. Let's use the Integral Test to prove it. \\
+	
+	\textbf{Solution:} Given the sequence $ \frac{1}{n} $, the corresponding function is $ f(x) = \frac{1}{x} $. Taking the integral will tell us the behavior of the series:
+	
+	$$
+		\int_{1}^{\infty} \frac{1}{x}\;dx =
+		\lim_{c\to\infty} \int_{1}^{c} \frac{1}{x}\;dx =
+		\lim_{c\to\infty} \left[\ln(x)\right]_{1}^{c} =
+		\lim_{c\to\infty} \left[\ln(c) - \ln(1)\right]				
+	$$
+	
+	Plugging in $ \infty $ for $ c $ makes the integral diverge. Because the integral diverges, the series $ \sum_{n=1}^{\infty} \frac{1}{n} $ must also diverge.
+	
+	\item Determine if $ \sum_{n=1}^{\infty} \frac{1}{n^2} $ converges or diverges. \\
+	
+	
+	\textbf{Solution:} Given the sequence $ \frac{1}{n^2} $, the corresponding function is $ f(x) = \frac{1}{x^2} $. Taking the integral will tell us the behavior of the series:
+	
+	$$
+		\int_{1}^{\infty} \frac{1}{x^2}\;dx =
+		\lim_{c\to\infty} \int_{1}^{c} \frac{1}{x^2}\;dx =
+		\lim_{c\to\infty} \left[ -\frac{1}{x} \right]_{1}^{c} =
+		\lim_{c\to\infty} \left[ -\frac{1}{c} + \frac{1}{1} \right] = 1
+	$$
+	
+	This integral converges to 1. Because the integral converges, the sum $ \sum_{1}^{\infty} \frac{1}{n^2} $ must also converge.
+
+
+
+\end{enumerate}
+
+
+
+
+\clearpage
+
+
+
+
+% Geometric Series Test
+\section{Geometric Series Test (GST)}
+\label{geometric_series_test}
+For a geometric series of the form
+    $$\sum_{n=0}^{\infty} kr^n$$
+where $k$ is a constant, the behavior can be determined through the common ratio $r = \frac{a_2}{a_1}$ (or any other two consecutive terms).
+\begin{enumerate}
+    \item If $|r| \geq 1$, the series \textbf{diverges}
+    \item If $|r| < 1$, the series \textbf{converges} to $\frac{a_1}{1-r}$
+\end{enumerate}
+
+
+
+\noindent\textbf{Shortcut:} If the series is of the form $\sum \left( \frac{a}{b} \right)^n$ and $\frac{a}{b} < 1$, then the series converges. For example: $\sum_{n=0}^{\infty} \left( \frac{1}{3} \right)^n$ converges because $r = \frac{1}{3}$ and $|r| < 1$. Try finding $r$ through the ratio method above to verify.
+
+\subsection*{Examples}
+
+\begin{enumerate}
+    \item Determine if $\sum_{n=0}^{\infty} \left( \frac{1}{2} \right)^n$ converges or diverges.
+    
+    \textbf{Solution:} The shortcut method works for this, but we'll do it the long way as an example. Listing the terms of the sequence gives us
+        $$a_n = \left\{1, \frac{1}{2}, \frac{1}{4}, \frac{1}{8}, \frac{1}{16}, ... \right\}.$$
+    Choosing any two consecutive terms gives us the ratio $r$
+        $$r= \frac{a_2}{a_1} = \frac{\frac{1}{2}}{1} = \frac{1}{2}$$
+    and since $|r| < 1$, the series converges to 
+        $$\frac{a_1}{1-r} = \frac{1}{1-\frac{1}{2}} = \frac{1}{\frac{1}{2}} = 2$$
+    
+    
+    
+        
+    \item Determine if $\sum_{n=0}^{\infty} 3^n$ converges or diverges. 
+    
+    \textbf{Solution:} This is a geometric series with $r = 3$. Since $r > 1$, this series diverges.
+\end{enumerate}
+
+
+
+\section{The Alternating Series Test}
+Given a series $a_n = (-1)^n \; b_n $ or $ a_n = (-1)^{n+1} \; b_n $ where $ b_n \geq 0 $
+
+\begin{enumerate}
+	\item If $ \lim_{n\to\infty} b_n = 0 $ \textbf{and}
+	\item if $ b_n $ is decreasing
+\end{enumerate}
+
+\noindent then $ \sum_{n=1}^{\infty} a_n $ is convergent.
+
+
+\subsection*{Examples}
+\begin{enumerate}
+
+	\item Determine if $ \sum_{n=1}^{\infty} \frac{(-1)^n}{n} $ converges or diverges. \\
+	
+	\textbf{Solution:} You may see that removing the alternating part of the sequence leaves us with $ \frac{1}{n} $ which diverges, but let's go through the Alternating Series Test. If $ a_n = \frac{(-1)^n}{n} $ then $ b_n = \frac{1}{n} $.
+	
+	$$
+		\lim_{n\to\infty} \frac{1}{n} = 0
+		\quad \quad \text{and} \quad \quad
+		\frac{d}{dn} \left( \frac{1}{n} \right) = -\frac{1}{n^2}
+	$$
+
+	The limit of $ b_n = 0 $ and since the derivative is always negative, the sequence is always decreasing. So by the AST, the series $ \sum_{n=1}^{\infty} \frac{(-1)^n}{n} $ converges.
+	
+	This makes intuitive sense: imagine each term of the harmonic series, but every other term is negative. Every term $ \to 0 $, and they cancel each other out and slow down the growth of the series. 
+
+
+
+	\item What are all positive values of $ p $ such that the series $ \sum_{n=1}^{\infty} (-1)^{n+1} \left( \frac{p}{6} \right)^n $ converges?
+	
+	\textbf{Solution:} The remaining sequence $ b_n $ after removing the alternating bit is $ b_n = \left( \frac{p}{6} \right)^n $. We need this sequence (or function) to be positive, decreasing, and have a limit as $ n\to\infty $ of 0.
+	
+	\begin{itemize}
+		\item[Case 1] \quad If $ p > 6 $ then the terms will all be increasing as $ n\to\infty $.
+		\item[Case 2] \quad If $ p = 6 $ then the terms will all be 1, not decreasing.
+		\item[Case 3] \quad If $ p < 6 $ then the terms will be decreasing:
+		$$
+			p = 3 \quad \quad
+			b_n = \left( \frac{3}{6} \right)^n
+		$$
+		$$ \lim_{n\to\infty} \left( \frac{1}{2} \right)^n = 0 $$
+		
+		So $ p < 6 $ satisfies the conditions for the Alternating Series test, and makes the series converge. 
+	\end{itemize}
+	
+\end{enumerate}
+
+
+\clearpage
+
+
+\section{Limit Comparison Test (LCT)}
+Given two series
+    $$ \sum_{n=k}^{\infty} a_n \quad \quad \sum_{n=k}^{\infty} b_n $$
+and
+    $$ \lim_{n\to\infty} \frac{a_n}{b_n} = L $$
+
+
+\begin{enumerate}
+    \item If $ 0 < L < \infty $, then the behavior of the two series \textbf{is the same}
+    \item If $ L = 0 $, then if $b_n$ converges, so does $a_n$
+    \item If $ L = \infty $, then if $b_n$ diverges, so does $a_n$
+\end{enumerate}
+
+\noindent \textbf{Note:} If the limit $ L $ is a real, positive number and both series converge, the sum of the series \textbf{is not} equal to the limit $ L $.
+
+
+\begin{center}
+    \noindent\rule{1cm}{0.4pt}
+\end{center}
+
+\noindent \\ The challenge here is finding another sequence with known convergence or divergence. Given a series $ a_n $ with unknown behavior, the ideal case would be to find another series $ b_n $ with known behavior such that the limit of the ratio $ \lim_{n\to\infty} \frac{a_n}{b_n} $ is a real and positive number. The LCT tells us that both series must behave the same, and we chose $ b_n $ intentionally because we already know it's behavior.
+\begin{itemize}
+    \item[-] For rational series like $\frac{n^4-2n^3+...}{n^5-7n^4+...}$, look at the ratio of degree of the leading terms. In this example $\frac{n^4}{n^5} = \frac{1}{n}$, so $\frac{1}{n}$ would be a good sequence to use since it's behavior is known. 
+\end{itemize}
+
+\subsection*{Examples}
+\begin{enumerate}
+    \item Determine if $\sum_{n=0}^{\infty} \frac{2^n}{3^n-1}$ converges or diverges.
+    
+    \textbf{Solution:} Let $a_n = \frac{2^n}{3^n-1}$. A helpful series to compare $a_n$ to is
+        $$\sum_{n=0}^{\infty} b_n = \sum_{n=0}^{\infty} \left( \frac{2}{3} \right)^n$$
+    as $b_n$ can be rewritten as $\frac{2^n}{3^n}$. Taking the $\lim_{n\to\infty} \frac{a_n}{b_n}$ gives
+        \[
+        \lim_{n\to\infty} \frac{\frac{2^n}{3^n-1}}{\frac{2^n}{3^n}} =
+        \lim_{n\to\infty} \frac{2^n}{3^n-1} \cdot \frac{3^n}{2^n} =
+        \lim_{n\to\infty} \frac{3^n}{3^n-1} = 
+        \lim_{n\to\infty} \frac{1}{1 - \frac{1}{3^n}} = 1.
+        \]
+    The behavior of $\sum b_n$ is known: it's a geometric series with $r = \frac{2}{3}$, and therefore converges to some positive quantity we don't really care about. Because $b_n$ converges, by the Limit Comparison Test, $a_n$ must also converge.
+    
+\end{enumerate}
+
+
+\clearpage
+
+
+
+
+\section{Direct Comparison Test (DCT)}
+Given two sequences
+	$$ 0 \leq a_n \leq b_n $$
+
+\begin{enumerate}
+	\item If $\sum a_n$ diverges, then $\sum b_n$ must diverge.
+	\item If $\sum b_n$ converges, then $\sum a_n$ must converge.
+\end{enumerate}
+
+
+\begin{center}
+    \noindent\rule{1cm}{0.4pt}
+\end{center}
+
+
+\noindent Like the Limit Comparison Test the challenge is finding the right series to compare it with. Setting up an inequality is usually helpful. See examples below. 
+
+\subsection*{Examples}
+
+\begin{enumerate}
+	\item Determine if $\sum_{n=1}^{\infty} \frac{1}{\ln(n)}$ converges or diverges. \\
+	
+	\textbf{Solution:} The Test for Divergence is inconclusive here, so are the root and ratio tests. First, let's set up an inequality to find a comparison series. Remember $n > 0$
+		$$n \geq \ln(n)$$
+		$$\frac{1}{n} \leq \frac{1}{\ln(n)}$$
+	
+	The series $\sum_{n=1}^{\infty} \frac{1}{n}$ is the harmonic series and is divergent (p-series, $p=1$). Because this sequence is always smaller than the series we're comparing to and is divergent, then by part 1 of the Direct Comparison Test the series $\sum_{n=1}^{\infty} \frac{1}{\ln(n)}$ must also be divergent.
+
+	\item Determine if $\sum_{n=1}^{\infty} \frac{1}{2^n+n}$ converges or diverges.
+	
+	\textbf{Solution:} The behavior of the series $\sum \frac{1}{2^n+n}$ is mostly determined by the $2^n$ in the denominator as it grows much faster than the remaining $n$. We can begin searching for a comparison series by setting up an inequality. Remember that the domain of $n$ is $[1, \infty]$.
+		$$2^n + n \geq 2^n$$
+		$$\frac{1}{2^n+n} \leq \frac{1}{2^n}$$
+		
+	The series $\sum_{n=1}^{\infty} \frac{1}{2^n}$ is a geometric series with $|r| < 1$, so therefore converges. Because the larger series converges, then by part 2 of the Direct Comparison Test $\sum_{n=1}^{\infty} \frac{1}{2^n+n}$ must converge.
+	
+	\item Determine if $\sum_{n=1}^{\infty} \frac{2^n}{3^n(n+7)}$ converges or diverges.
+	
+	\textbf{Solution:} This problem is similar to example 2. We can set up an inequality to find a comparison function. Remember $n > 0$.
+		$$3^n(n+7) > 3^n$$
+		$$\frac{1}{3^n(n+7)} < \frac{1}{3^n}$$
+		$$\frac{2^n}{3^n(n+7)} < \frac{2^n}{3^n}$$
+		$$\frac{2^n}{3^n(n+7)} < \left( \frac{2}{3} \right)^n$$
+	The series $\sum_{n=1}^{\infty} \left( \frac{2}{3} \right)^n$ is a geometric series with $|r| < 1$, so it converges. By part 2 of the Direct Comparison Test, $\sum_{n=1}^{\infty} \frac{2^n}{3^n(n+7)}$ must also converge.
+	
+\end{enumerate}
+
+
+
+
+
+
+
+\clearpage
+
+
+
+
+\section{The Ratio Test}
+Given a series
+	
+	$$ \sum_{n=k}^{\infty} a_n \quad \quad \text{and} \quad \quad \lim_{n\to\infty} \left| \frac{a_{n+1}}{a_n} \right| = L$$
+
+\begin{enumerate}
+	\item If $ L < 1 $, the series converges absolutely.
+	\item If $ L > 1 $, the series diverges.
+	\item If $ L = 1 $, the test is inconclusive.
+\end{enumerate}
+
+\subsection*{Examples}
+\begin{enumerate}
+	\item Determine if $ \sum_{n=5}^{\infty} \frac{n^{10}}{n!} $ converges or diverges.
+	
+	\textbf{Solution:} To use the ratio test we need $ \frac{a_n}{a_{n+1}} $:
+	$$ a_n = \frac{n^{10}}{n!} $$
+	$$ a_{n+1} = \frac{(n+1)^{10}}{(n+1)!} $$
+	$$
+		\frac{a_{n+1}}{a_n} = 
+		\frac{\frac{(n+1)^{10}}{(n+1)!}}{\frac{n^{10}}{n!}} =
+		\frac{(n+1)^{10}}{(n+1)!} \cdot \frac{n!}{n^{10}} =
+	$$
+	$$
+		\frac{(n+1)^{10}}{(n+1)} \cdot \frac{1}{n^{10}} = 
+		\frac{(n+1)^{10}}{n^{11}+n^{10}}
+	$$
+	We can see that $ \frac{a_n}{a_{n+1}} $ is of the form $ \frac{n^{10}}{n^{11}} $, which is similar to $ \frac{1}{n} $. Taking the limit, we see that
+	
+	$$
+		\lim_{n\to\infty} \frac{(n+1)^{10}}{n^{11}+n^{10}} =
+		\lim_{n\to\infty} \frac{1}{n} = 0.
+	$$
+	Because the limit $ < 1 $, this series converges absolutely. 
+	
+\end{enumerate}
+
+
+\clearpage
+
+
+
+
+
+
+\section{The Root Test}
+Suppose
+	$$ \lim_{n\to\infty} \sqrt[n]{|a_n|} = L $$
+
+\begin{enumerate}
+	\item If $ L < 1 $, the series converges absolutely.
+	\item If $ L > 1 $, the series diverges.
+	\item If $ L = 1 $, the test is inconclusive. 
+\end{enumerate}
+
+\noindent This is mostly for series raised to a power of $n$, since the root of $n$ cancels the power.
+
+
+\subsection*{Examples}
+\begin{enumerate}
+	\item Determine if $\sum_{n=1}^{\infty} \left( \frac{2n^2-3n+1}{3n^2+2n+1} \right)^n$ converges or diverges.
+	
+	\textbf{Solution:} The root test is a good fit for this series because the $\sqrt[n]{}$ in the test will cancel out the $()^n$ in the series.
+		$$ \lim_{n\to\infty} \sqrt[n]{\left( \frac{2n^2-3n+1}{3n^2+2n+1} \right)^n} $$
+		$$ \lim_{n\to\infty} \frac{2n^2-3n+1}{3n^2+2n+1} = \frac{2}{3} = L $$
+		
+	Since $ L < 1 $, the series converges absolutely. 
+\end{enumerate}
+
+
+\pagebreak
+
+
+\section{Strategies}
+
+\begin{itemize}
+	
+	\item[] For factorial, exponential, and some polynomial functions, use the \textbf{Ratio Test}.
+
+	\item[] For series of the form $ \sum \left( \sim \right)^n $, use the \textbf{Root Test}.
+
+	\item[] For series of the form $ \sum \frac{\text{polynomial}}{\text{polynomial}} $ use the \textbf{Limit Comparison Test} or the \textbf{P-series Test}.
+
+	\item[] For inequalities like $ \left| \sin(\sim) \right| \leq \sum \sim $, use the \textbf{Direct Comparison Test}
+
+	\item[] For series of the form $ \sum \frac{\ln(\sim)}{\text{polynomial}} $, then sometimes use the \textbf{Integral Test}.
+	
+	\item[] If there's an alternating bit like $ (-1)^n $ or $ (-1)^{n+1} $, use the \textbf{Alternating Series Test}.
+\end{itemize}
+
+
+\pagebreak
+
+
+
+
+
+\end{document}
