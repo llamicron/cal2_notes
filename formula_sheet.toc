@@ -1,17 +1,31 @@
-\contentsline {chapter}{\numberline {1}The Basics}{2}
-\contentsline {section}{\numberline {1.1}What are Sequences and Series?}{2}
-\contentsline {section}{\numberline {1.2}Series Behavior}{3}
-\contentsline {chapter}{\numberline {2}Types of Series}{4}
-\contentsline {section}{\numberline {2.1}P-Series}{4}
-\contentsline {section}{\numberline {2.2}Telescoping Series}{5}
-\contentsline {section}{\numberline {2.3}Geometric Series}{6}
-\contentsline {chapter}{\numberline {3}Series Tests}{7}
-\contentsline {section}{\numberline {3.1}Test for Divergence (TFD)}{7}
-\contentsline {section}{\numberline {3.2}The Integral Test}{9}
-\contentsline {section}{\numberline {3.3}Geometric Series Test (GST)}{10}
-\contentsline {section}{\numberline {3.4}The Alternating Series Test}{11}
-\contentsline {section}{\numberline {3.5}Limit Comparison Test (LCT)}{13}
-\contentsline {section}{\numberline {3.6}Direct Comparison Test (DCT)}{15}
-\contentsline {section}{\numberline {3.7}The Ratio Test}{17}
-\contentsline {section}{\numberline {3.8}The Root Test}{18}
-\contentsline {section}{\numberline {3.9}Strategies}{19}
+\contentsline {chapter}{\numberline {1}Integrals}{3}
+\contentsline {section}{\numberline {1.1}$u$-Substitution}{3}
+\contentsline {section}{\numberline {1.2}Integration By Parts}{5}
+\contentsline {section}{\numberline {1.3}Trigonometric Substitution}{6}
+\contentsline {section}{\numberline {1.4}Improper Integrals}{9}
+\contentsline {chapter}{\numberline {2}Length, Area, and Volume}{10}
+\contentsline {section}{\numberline {2.1}Arc Length of a Curve}{10}
+\contentsline {section}{\numberline {2.2}Surface Area of a Rotated Curve}{10}
+\contentsline {section}{\numberline {2.3}Volume of a Rotated Solid}{11}
+\contentsline {subsection}{\numberline {2.3.1}Disk Method}{11}
+\contentsline {subsection}{\numberline {2.3.2}Washer Method}{11}
+\contentsline {chapter}{\numberline {3}Series}{13}
+\contentsline {section}{\numberline {3.1}What are Sequences and Series?}{13}
+\contentsline {section}{\numberline {3.2}Series Behavior}{14}
+\contentsline {section}{\numberline {3.3}P-Series}{15}
+\contentsline {section}{\numberline {3.4}Telescoping Series}{16}
+\contentsline {section}{\numberline {3.5}Geometric Series}{18}
+\contentsline {chapter}{\numberline {4}Series Tests}{19}
+\contentsline {section}{\numberline {4.1}Test for Divergence (TFD)}{19}
+\contentsline {section}{\numberline {4.2}The Integral Test}{21}
+\contentsline {section}{\numberline {4.3}Geometric Series Test (GST)}{22}
+\contentsline {section}{\numberline {4.4}The Alternating Series Test}{22}
+\contentsline {section}{\numberline {4.5}Limit Comparison Test (LCT)}{24}
+\contentsline {section}{\numberline {4.6}Direct Comparison Test (DCT)}{25}
+\contentsline {section}{\numberline {4.7}The Ratio Test}{27}
+\contentsline {section}{\numberline {4.8}The Root Test}{28}
+\contentsline {section}{\numberline {4.9}Taylor Series}{29}
+\contentsline {section}{\numberline {4.10}Series Strategies}{32}
+\contentsline {chapter}{\numberline {5}Tables}{33}
+\contentsline {section}{\numberline {5.1}Table of Derivatives}{33}
+\contentsline {section}{\numberline {5.2}Table of Integrals}{33}

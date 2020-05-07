@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.22)  7 APR 2020 11:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.22)  6 MAY 2020 16:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -143,27 +143,6 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \titlewidthlast=\dimen127
 \titlewidthfirst=\dimen128
 )
-\@indexfile=\write3
-\openout3 = `formula_sheet.idx'.
-
-
-Writing index file formula_sheet.idx
-(./formula_sheet.aux)
-\openout1 = `formula_sheet.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -180,21 +159,45 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen129
+\Gin@req@width=\dimen130
+)
+\@indexfile=\write3
+\openout3 = `formula_sheet.idx'.
+
+
+Writing index file formula_sheet.idx
+(./formula_sheet.aux)
+\openout1 = `formula_sheet.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count104
-\scratchdimen=\dimen129
+\scratchdimen=\dimen131
 \scratchbox=\box29
 \nofMPsegments=\count105
 \nofMParguments=\count106
 \everyMPshowfont=\toks26
 \MPscratchCnt=\count107
-\MPscratchDim=\dimen130
+\MPscratchDim=\dimen132
 \MPnumerator=\count108
 \makeMPintoPDFobject=\count109
 \everyMPtoPDFconversion=\toks27
-))) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
@@ -250,9 +253,6 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\Gin@req@height=\dimen131
-\Gin@req@width=\dimen132
-)
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./formula_sheet.toc)
@@ -262,131 +262,242 @@ e
 
 [1
 
-]
+] [2]
 Chapter 1.
-[2
 
-] [3]
-Chapter 2.
-
-Underfull \hbox (badness 10000) in paragraph at lines 66--68
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
+[3
 
+]
 Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
-[4
 
-] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
-LaTeX Warning: Reference `geometric_series_test' on page 6 undefined on input l
-ine 129.
+ []
 
 
-LaTeX Warning: Reference `geometric_series_test' on page 6 undefined on input l
-ine 129.
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
 
-[6]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
+
+ []
+
+[5
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+
+ []
+
+[6
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
+
+ []
+
+<./images/trig_sub_triangle.png, id=35, 396.48125pt x 247.92625pt>
+File: ./images/trig_sub_triangle.png Graphic file (type png)
+<use ./images/trig_sub_triangle.png>
+Package pdftex.def Info: ./images/trig_sub_triangle.png  used on input line 190
+.
+(pdftex.def)             Requested size: 237.89058pt x 148.7569pt.
+[7 <./images/trig_sub_triangle.png>] [8] [9
+
+]
+Chapter 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
+
+ []
+
+[10
+
+
+]
+<./images/washer_method.png, id=51, 457.71pt x 283.0575pt>
+File: ./images/washer_method.png Graphic file (type png)
+<use ./images/washer_method.png>
+Package pdftex.def Info: ./images/washer_method.png  used on input line 295.
+(pdftex.def)             Requested size: 183.08075pt x 113.22098pt.
+ [11] [12 <./images/washer_method.png>]
 Chapter 3.
+[13
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
- []
-
-[7
+] [14
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 177--178
+Underfull \hbox (badness 10000) in paragraph at lines 363--365
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
-
- []
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+Underfull \hbox (badness 10000) in paragraph at lines 375--376
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--216
+Underfull \hbox (badness 10000) in paragraph at lines 379--380
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--229
-
- []
-
-[9
-
-] [10
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 305--306
-
- []
-
-[11] [12] [13
-
-] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 412--413
+Underfull \hbox (badness 10000) in paragraph at lines 383--384
 
  []
 
 [15
 
-] [16] [17
+]
+Underfull \hbox (badness 10000) in paragraph at lines 419--420
 
-] [18
+ []
 
-] [19] (./formula_sheet.aux)
+[16
 
-LaTeX Warning: There were undefined references.
+] [17] [18
+
+]
+Chapter 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 495--496
+
+ []
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Underfull \hbox (badness 10000) in paragraph at lines 504--505
 
- ) 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 512--513
+
+ []
+
+[19
+
+
+] [20]
+Underfull \hbox (badness 10000) in paragraph at lines 540--541
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 542--543
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--556
+
+ []
+
+[21
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 629--630
+
+ []
+
+[22
+
+] [23] [24
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 736--737
+
+ []
+
+[25
+
+] [26] [27
+
+] [28
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 847--848
+
+ []
+
+<./images/taylor_series.png, id=111, 301.125pt x 301.125pt>
+File: ./images/taylor_series.png Graphic file (type png)
+<use ./images/taylor_series.png>
+Package pdftex.def Info: ./images/taylor_series.png  used on input line 864.
+(pdftex.def)             Requested size: 210.78606pt x 210.78606pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 885--886
+
+ []
+
+[29
+
+ <./images/taylor_series.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 905--906
+
+ []
+
+[30] [31] [32]
+Chapter 5.
+[33
+
+] (./formula_sheet.aux) ) 
 Here is how much of TeX's memory you used:
- 3068 strings out of 492982
- 43196 string characters out of 6134896
- 113019 words of memory out of 5000000
- 6602 multiletter control sequences out of 15000+600000
- 11506 words of font info for 41 fonts, out of 8000000 for 9000
+ 3092 strings out of 492982
+ 43764 string characters out of 6134896
+ 114636 words of memory out of 5000000
+ 6621 multiletter control sequences out of 15000+600000
+ 12345 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,7n,30p,829b,249s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-
-Output written on formula_sheet.pdf (20 pages, 162544 bytes).
+ 41i,9n,31p,829b,206s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pf
+b>
+Output written on formula_sheet.pdf (34 pages, 335285 bytes).
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
+ 181 PDF objects out of 1000 (max. 8388607)
+ 122 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
