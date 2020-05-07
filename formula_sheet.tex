@@ -31,7 +31,6 @@ Things I need to add:
 \begin{enumerate}
 	\item Partial fraction decomp
 	\item Power series
-	\item polar coordinates
 	\item parametric equations
 	\item volume of rotated curves, shells method
 \end{enumerate}
@@ -232,7 +231,7 @@ This integral also diverges, because $\lim_{c\to0^+} \ln(c) \to -\infty$
 
 
 
-\chapter{Length, Area, and Volume}
+\chapter{Geometry}
 
 \section{Arc Length of a Curve}
 Given a function $f(x)$, the arc length of a segment of the curve from $a$ to $b$ is given by
@@ -311,7 +310,77 @@ For example, if you're given $f(x) = y = \sqrt{x} $, solve for $x$: $x = f(y) = 
 
 
 
+
+\section{Polar Coordinates}
+In a rectangular (Cartesian) coordinate system, $x$ and $y$ values correspond to horizontal and vertical motion, but in a \textit{polar system} these coordinates are $r$ and $\theta$. $r$, or magnitude, is the distance from the origin, and $\theta$ is the angle in radians from the positive $x$ axis going counterclockwise.
+
+\begin{center}
+\includegraphics[scale=0.9]{polar_coords}
+\end{center}
+
+Converting between the two systems is pretty easy. Using some geometric skullduggery we can derive the following equations for convering between polar and rectangular
+
+\begin{center}
+\textbf{From Polar to Rectangular}
+\end{center}
+$$ x = r \cos(\theta) \quad \quad \quad y = r \sin(\theta) $$
+
+\begin{center}
+\textbf{From Rectangular to Polar}
+\end{center}
+$$ r = \sqrt{x^2 + y^2} \quad \quad \quad \theta = \tan \left( \frac{y}{x} \right) $$
+
+
+\subsection*{Examples}
+\begin{enumerate}
+	\item Convert $2x - 5x^3 = 1 + xy$ to polar coordinates \\
+	
+	This one is pretty easy, we just need to plug in $x$ and $y$ from the equations above.
+	
+	$$ x = r \cos(\theta) \quad \quad \quad y = r \sin(\theta) $$
+	$$ 2(r\cos(\theta)) - 5(r\cos(\theta))^3 = 1 + (r\cos(\theta))(r\sin(\theta)) $$
+	$$ 2r\cos(\theta) - 5r^3\cos^3(\theta) = 1 + r^2\cos(\theta)\sin(\theta) $$
+	
+	\item Convert $r = -8\cos(\theta)$ to rectangular coordinates \\
+	
+	We want either $r\cos(\theta)$ or $r\sin(\theta)$ in our equation so we can plug in $x$ and $y$. It would also be helpful to get $r^2$ so we don't have to deal with a square root. Let's multiply by $r$ on both sides then sutitute our known values for $x$ and $y$
+	
+	$$ r = -8\cos(\theta) $$
+	$$ r^2 = -8r\cos(\theta) $$
+	$$ x^2 + y^2 = -8x$$
+	
+	This makes a circle of radius 4 centered at $(4,0)$
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \clearpage
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
